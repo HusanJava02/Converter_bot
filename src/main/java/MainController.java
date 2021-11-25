@@ -22,7 +22,7 @@ import java.lang.reflect.Array;
 import java.util.*;
 
 @Data
-public class TelegramBot extends TelegramLongPollingBot {
+public class MainController extends TelegramLongPollingBot {
     private Long adminId;
     int integerLastChar = -1;
     int integerLastCharLeft = -1;

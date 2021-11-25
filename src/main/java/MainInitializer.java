@@ -11,7 +11,7 @@ public class MainInitializer {
         TelegramBotsApi api = new TelegramBotsApi();
 
         try {
-            BotSession botSession = api.registerBot(new TelegramBot());
+            BotSession botSession = api.registerBot(new MainController());
         } catch (TelegramApiRequestException e) {
             String apiResponse = e.getApiResponse();
             System.out.println(apiResponse);
